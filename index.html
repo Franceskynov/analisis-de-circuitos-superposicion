@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Superposicion</title>
+
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+	
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	
+	<link rel="stylesheet" href="/analisis-de-circuitos-superposicion/assets/revealjs/css/reveal.css">
+	<link rel="stylesheet" href="/analisis-de-circuitos-superposicion/assets/revealjs/css/theme/black.css" id="theme">
+	<link rel="stylesheet" href="/analisis-de-circuitos-superposicion/assets/css/styles.css">
+<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+	  tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+	});
+  </script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML-full"></script>
+  <!--
+	  <script type="text/javascript" src="node_modules/mathjax/unpacked/MathJax.js?config=TeX-AMS_HTML-full"></script>
+  -->
+  
+</head>
+
+<body>
+		<div class="reveal"><!--blurred-->
+			<div class="slides">
+				<section data-background="assets/img/nicolas-thomas-533958-unsplash.jpg" class="preq">
+					<img src="/analisis-de-circuitos-superposicion/assets/img/brand.png" alt="UTEC" width="150">
+					<p>IACI-I</p>
+					<p>
+						<small>Materia: Introducci&oacute;n al an&aacute;lisis de circuitos  </small>
+					</p>
+					<p>
+						<small>Secci&oacute;n: <b>02</b> </small>
+					</p>
+					<p>
+						<small>Docente: Julio C&eacute;sar Rosales Barrera</small>
+					</p>
+				</section>
+				<section>
+					<section data-background-color="#ffffff">
+						<h1>
+								Superposici&oacute;n
+						</h1>
+					</section>
+					<section data-background="#ffffff">
+						<h3>
+							El principio de superposici&oacute;n
+						</h3>
+						Una corriente o tensi&oacute;n deseadas en un circuito lineal que tiene m&aacute;s de una fuente independiente
+						se obtiene mediante la suma de las respuestas ocacionadas por las fuentes independientes
+						separadas y que act&uacute;an solas.
+
+					</section>
+					<section data-background-color="#ffffff">
+						<h3>
+							Elementos lineales & circuitos lienales
+						</h3>
+						Se definir&aacute; un elemento lineal como un elemento pasivo que tiene una relaci&oacute;n lineal tensi&oacute;n - corriente.
+
+						$$v(t)={Ri(t)}$$
+					</section>
+					<section data-background-color="#ffffff">
+						<h3>
+							Consideraciones a tener en cuenta en el principio de superposici&oacute;n
+						</h3>
+						<ul>
+							<li>
+								El circuito posee dos fuentes <b> independientes </b>
+							</li>
+							<li>
+								Los generadores de corriente se denominan como : $i_a$ & $i_b$ 
+							</li>
+						</ul>
+						<img src="/analisis-de-circuitos-superposicion/assets/img/superposicion.png" alt="" style="width:50%;" >
+					</section>
+					<section data-background-color="#ffffff">
+						<h4>
+							Las dos ecuaciones de este circuito son
+						</h4>
+						<p class="fragment">
+							$$ { 0.7v_1 -0.2v_2 }=i_a $$
+						
+							$$ { -0.2v_1 + 1.2V_2 }=i_b $$
+						</p>
+					</section>
+					<Section data-background-color="#ffffff">
+						<h3>
+							Ahora se efectuar&aacute; el el experimento $ x $
+						</h3>
+						<p>
+							Se cambiar&aacute; las dos funciones forzadas a $ i_{ax} $ e $ i_{bx} $
+							las dos tensiones desconocidas ser&aacute;n ahora diferentes, por lo tanto se denominan 
+							$ v_{1x} $ & $ v_{2x} $
+						</p>
+						<p class="fragment">
+							$$ {0.7v_{1x} - 0.2v_{2x} }=i_{ax} $$
+						
+							$$ {-0.2v_{1x} + 1.2v_{2x} }=i_{bx} $$
+						</p>
+						<p class="fragment">
+							Enseguida se lleva a cabo el experimento y al cambiar las corrientes de la fuente por $ i_{by} $ & $ i_{by} $
+						</p>
+						<p class="fragment">
+							$$ {0.7v_{1y} - 0.2v_{2y} }=i_{ay} $$
+						
+							$$ {-0.2v_{1y} + 1.2v_{2y} }=i_{by} $$	
+						</p>	
+					</Section>
+					<section data-background-color="#ffffff">
+						<h4>
+							El teorema de superposicion expresa
+						</h4>
+						<p>
+							En cualquier red resistiva lineal, la tensi&oacute;n o la corriente a trav&eacute;s de cualquier resistencia o fuente se calcula mediante la suma algebraica de todas las tensiones o corrientes individuales ocacionadas por fuentes independientes separadas que act&uacute;an solas,
+							junto con todas las dem&aacute;s fuentes de tensi&oacute;n independienete sustituidas por cortocircuitos y todas todas las dem&aacute;s fuentes de corriente independientes, sustituidas por circuitos abiertos.
+						</p>
+					</section>
+				</section>
+				<section>
+					<Section data-background="#ffffff">
+						<h3>
+							Ejemplo: 1
+						</h3>
+						<img src="/analisis-de-circuitos-superposicion/assets/img/ejemplo1/ejemplo1a.png" alt="" style="width: 40%; display: inline;">
+						
+					</Section>
+					<section data-background="#ffffff">
+						<h3>
+							Simplificar el circuito
+						</h3>
+						<img src="/analisis-de-circuitos-superposicion/assets/img/ejemplo1/ejemplo1b.png" alt="" style="width: 36%; display: inline;">
+						<img src="/analisis-de-circuitos-superposicion/assets/img/ejemplo1/ejemplo1c.png" alt="" style="width: 40%; display: inline;">
+					</section>
+					<section data-background="#ffffff">
+						$$ i_x = {\frac{3}{6 + 9} + 2(\frac{6}{6 + 9}) } $$
+						$$ i_x = { 0.2 + 0.8 }  $$ 
+						$$ i_x = 1.0A $$
+					</section>
+				</section>
+				<section >
+					
+					<section data-background="#ffffff">
+						<h3>
+							Ejemplo: 2
+						</h3>
+						<img src="/analisis-de-circuitos-superposicion/assets/img/ejemplo2/ej2a.png" alt="">
+					</section>
+					<section data-background="#ffffff">
+						<h3>
+							Simplificar el circuito
+						</h3>
+
+						<img src="/analisis-de-circuitos-superposicion/assets/img/ejemplo2/ej2b.png" alt="">
+						<img src="/analisis-de-circuitos-superposicion/assets/img/ejemplo2/ej2c.png" alt="">
+
+					</section>
+					<section data-background="#ffffff">
+						
+						$$ { -10 + 2i^{'}_x + li^{'}_x + 2i^{'}_x} = 0 $$
+
+						$$ i^{'}_x = 2A $$
+
+						<p class="fragment">
+							$$ \frac{ v^{''} }{ 2 } + \frac{ v^{''} - 2i^{''}_x }{ 1 } $$
+						</p>
+
+						<p class="fragment">
+							$$ i_x = { i^{'}_x + i^{''}_x } = 2 + (-0.6) = 1.4 A  $$
+						</p>
+					
+					</section>
+				</section>
+			</div>
+		</div>
+
+	<!--script src="assets/js/jquery-2.1.3.min.js"></script-->
+	<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script src="/analisis-de-circuitos-superposicion/assets/revealjs/lib/js/head.min.js"></script>
+	<script src="/analisis-de-circuitos-superposicion/assets/revealjs/js/reveal.js"></script>
+	<script src="/analisis-de-circuitos-superposicion/assets/js/presenter.js"></script>
+
+</body>
+</html>
